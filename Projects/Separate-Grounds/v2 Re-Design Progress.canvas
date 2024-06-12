@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"b1b5488ecbd3b627","x":-627,"y":-215,"width":582,"height":580,"type":"text","text":"# 24-03-13 - 64 Pixel Design\n\n## Tracing\n\nThink in terms of the vertices to calculate the right pitches using arrays. If the final wire can have one less jog than the others, then you can effectively find the pitch for n-1 wires following the jog, and n wires prior to it."}
+	],
+	"edges":[]
+}

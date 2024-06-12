@@ -1,0 +1,118 @@
+# Xic Key/Action Mapping
+Home                : 1000010
+Page Up             : 1000016
+Page Down           : 1000017
+Numeric Minus       : 1000005
+Numeric Plus        : 1000010
+#
+<Macro-inhibit> '`'
+#
+<Keymap> 28
+  Return               RETURN_KEY       0
+  Esc                  ESCAPE_KEY       0
+  Tab                  TAB_KEY          0
+  Pause                BREAK_KEY        0
+  Del                  DELETE_KEY       0
+  Backspace            BSP_KEY          0
+  Left                 LEFT_KEY         0
+  Up                   UP_KEY           0
+  Right                RIGHT_KEY        0
+  Down                 DOWN_KEY         0
+  ??                   SHIFTDN_KEY      0
+  ??                   CTRLDN_KEY       0
+  Home                 HOME_KEY         0
+  Home                 NUPLUS_KEY       0
+  Enter                NUMINUS_KEY      0
+  PgDown               PAGEDN_KEY       0
+  PgUp                 PAGEUP_KEY       0
+  F1                   FUNC_KEY         0
+  F2                   FUNC_KEY         1
+  F3                   FUNC_KEY         2
+  F4                   FUNC_KEY         3
+  F5                   FUNC_KEY         4
+  F6                   FUNC_KEY         5
+  F7                   FUNC_KEY         6
+  F8                   FUNC_KEY         7
+  F9                   FUNC_KEY         8
+  F10                  FUNC_KEY         9
+  F11                  FUNC_KEY         10
+<End> Keymap
+#
+<Actions-pre> 11
+  ESCAPE_KEY   0                Escape_action
+  PAGEDN_KEY   0                DRCf_action
+  PAGEUP_KEY   0                DRCb_action
+  TAB_KEY      SHIFT            CodeRedo_action
+  TAB_KEY      0                CodeUndo_action
+  'c'          CTRL             Interrupt_action
+  'd'          CTRL             Delete_action
+  'g'          CTRL             Grid_action
+  'r'          CTRL             Redisplay_action
+  'x'          CTRL             Expand_action
+  'z'          CTRL             Iconify_action
+<End> Actions-pre
+#
+<Actions-post> 60
+  BSP_KEY      0                Bsp_action
+  DELETE_KEY   0                No_action
+  UNDO_KEY     0                Undo_action
+  REDO_KEY     0                Redo_action
+  'A'          CTRL-SHIFT       NameView_action
+  'B'          CTRL-SHIFT       NameView_action
+  'C'          CTRL-SHIFT       NameView_action
+  'D'          CTRL-SHIFT       NameView_action
+  'E'          CTRL-SHIFT       NameView_action
+  'F'          CTRL-SHIFT       NameView_action
+  'G'          CTRL-SHIFT       NameView_action
+  'H'          CTRL-SHIFT       NameView_action
+  'I'          CTRL-SHIFT       NameView_action
+  'J'          CTRL-SHIFT       NameView_action
+  'K'          CTRL-SHIFT       NameView_action
+  'L'          CTRL-SHIFT       NameView_action
+  'M'          CTRL-SHIFT       NameView_action
+  'N'          CTRL-SHIFT       NameView_action
+  'O'          CTRL-SHIFT       NameView_action
+  'P'          CTRL-SHIFT       NameView_action
+  'Q'          CTRL-SHIFT       NameView_action
+  'R'          CTRL-SHIFT       NameView_action
+  'S'          CTRL-SHIFT       NameView_action
+  'T'          CTRL-SHIFT       NameView_action
+  'U'          CTRL-SHIFT       NameView_action
+  'V'          CTRL-SHIFT       NameView_action
+  'W'          CTRL-SHIFT       NameView_action
+  'X'          CTRL-SHIFT       NameView_action
+  'Y'          CTRL-SHIFT       NameView_action
+  'Z'          CTRL-SHIFT       NameView_action
+  'b'          CTRL             DRCb_action
+  'e'          CTRL             Coord_action
+  'f'          CTRL             DRCf_action
+  'n'          CTRL             SaveView_action
+  'p'          CTRL             DRCp_action
+  'u'          CTRL             ClearKeys_action
+  'v'          CTRL             Version_action
+  '!'          0                Command_action
+  '?'          0                Help_action
+  LEFT_KEY     CTRL-SHIFT       SetPrevView_action
+  LEFT_KEY     CTRL             DecRot_action
+  LEFT_KEY     SHIFT            PanLeftFine_action
+  LEFT_KEY     0                PanLeft_action
+  DOWN_KEY     CTRL-SHIFT       DecExpand_action
+  DOWN_KEY     CTRL             FlipX_action
+  DOWN_KEY     SHIFT            PanDownFine_action
+  DOWN_KEY     0                PanDown_action
+  RIGHT_KEY    CTRL-SHIFT       SetNextView_action
+  RIGHT_KEY    CTRL             IncRot_action
+  RIGHT_KEY    SHIFT            PanRightFine_action
+  RIGHT_KEY    0                PanRight_action
+  UP_KEY       CTRL-SHIFT       IncExpand_action
+  UP_KEY       CTRL             FlipY_action
+  UP_KEY       SHIFT            PanUpFine_action
+  UP_KEY       0                PanUp_action
+  HOME_KEY     0                FullView_action
+  NUPLUS_KEY   SHIFT            ZoomInFine_action
+  NUMINUS_KEY  SHIFT            ZoomOutFine_action
+  NUPLUS_KEY   0                ZoomIn_action
+  NUMINUS_KEY  0                ZoomOut_action
+<End> Actions-post
+#
+<Buttons> 6 1 2 3 4 5 6 6

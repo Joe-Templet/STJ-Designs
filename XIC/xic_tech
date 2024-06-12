@@ -1,0 +1,547 @@
+# update from xic.exe 4.3.9 Win32 i386 06/12/2020 03:45 GMT
+Comment Xicii technology file for STARCryo process
+Comment STAR Cryoelectronics, LLC dated 4/14/04
+
+Technology star
+
+
+Path ( . )
+LibPath ( . /usr/local/xictools/xic/startup )
+HelpPath ( /usr/local/xictools/xic/help )
+ScriptPath ( /usr/local/xictools/xic/scripts )
+
+DefineLayer      PVia                   300
+DefineLayer      Base                   301
+DefineLayer      Cntr                   302
+DefineLayer      Etch                   303
+DefineLayer      Cont                   304
+DefineLayer      Wire                   305
+DefineLayer      Abs                    306
+DefineLayer      Au                     307
+DefineLayer      SU8                    308
+DefineLayer      DE                     309
+DefineLayer      Col                    310
+DefineLayer      Key                    311
+DefineLayer      Al                     312
+DefineLayer      ICol                   313
+DefineLayer      0100                   314
+DefineLayer      Plug                   315
+
+#------------------------------------------------------------------------------
+# Electrical Layers
+
+ElecLayer SCED
+StreamOut 1 0
+RGB 225 225 225
+Filled y
+
+ElecLayer ETC1
+StreamOut 2 0
+RGB 125 225 225
+Filled n
+
+ElecLayer ETC2
+StreamOut 3 0
+RGB 225 225 125
+Filled n
+
+ElecLayer NAME
+StreamOut 4 0
+RGB 255 230 175
+Filled n
+
+ElecLayer MODL
+StreamOut 5 0
+RGB 175 225 175
+Filled n
+
+ElecLayer VALU
+StreamOut 6 0
+RGB 255 225 225
+Filled n
+
+ElecLayer PARM
+StreamOut 7 0
+RGB 200 175 225
+Filled n
+
+ElecLayer NODE
+StreamOut 8 0
+RGB 255 255 225
+Filled n
+
+ElecLayer SPTX
+StreamOut 10 0
+RGB 255 134 170
+Filled n
+
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# Physical Layers
+
+PhysLayer PVia
+StreamIn 15, 0-255
+StreamOut 15 0
+RGB 250 250 250
+Filled \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  |........|  (0xff) \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  |........|  (0xff) outline
+
+PhysLayer Base
+StreamIn 3, 0-255
+StreamOut 3 0
+RGB 0 250 0
+Filled \
+  |   .   .|  (0x88) \
+  |  .   . |  (0x44) \
+  | .   .  |  (0x22) \
+  |.   .   |  (0x11) \
+  |   .   .|  (0x88) \
+  |  .   . |  (0x44) \
+  | .   .  |  (0x22) \
+  |.   .   |  (0x11) outline
+
+PhysLayer Cntr
+StreamIn 4, 0-255
+StreamOut 4 0
+RGB 250 0 0
+Filled \
+  |.   .   |  (0x11) \
+  | .   .  |  (0x22) \
+  |  .   . |  (0x44) \
+  |   .   .|  (0x88) \
+  |.   .   |  (0x11) \
+  | .   .  |  (0x22) \
+  |  .   . |  (0x44) \
+  |   .   .|  (0x88) outline
+
+PhysLayer Etch
+StreamIn 12, 0-255
+StreamOut 12 0
+RGB 170 90 250
+Filled \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  | .    . |  (0x42) \
+  |        |  (0x0) \
+  |  .  .  |  (0x24) \
+  |        |  (0x0) \
+  | .    . |  (0x42) \
+  |        |  (0x0) outline
+
+PhysLayer Cont
+StreamIn 9, 0-255
+StreamOut 9 0
+RGB 250 140 0
+Filled \
+  |.       |  (0x1) \
+  |        |  (0x0) \
+  |.       |  (0x1) \
+  |        |  (0x0) \
+  |. . . . |  (0x55) \
+  |        |  (0x0) \
+  |.       |  (0x1) \
+  |        |  (0x0) outline
+
+PhysLayer Wire
+StreamIn 8, 0-255
+StreamOut 8 0
+RGB 0 50 255
+Filled \
+  |.      .|  (0x81) \
+  | .    . |  (0x42) \
+  |  .  .  |  (0x24) \
+  |   ..   |  (0x18) \
+  |   ..   |  (0x18) \
+  |  .  .  |  (0x24) \
+  | .    . |  (0x42) \
+  |.      .|  (0x81) outline
+
+PhysLayer Abs
+StreamIn 10, 0-255
+StreamOut 10 0
+RGB 80 250 250
+Filled \
+  | .    . |  (0x42) \
+  |..    ..|  (0xc3) \
+  |        |  (0x0) \
+  |   ..   |  (0x18) \
+  |   ..   |  (0x18) \
+  |        |  (0x0) \
+  |..    ..|  (0xc3) \
+  | .    . |  (0x42) outline
+
+PhysLayer Au
+StreamIn 14, 0-255
+StreamOut 14 0
+RGB 240 240 0
+Filled \
+  |.  .   .|  (0x89) \
+  |   ..   |  (0x18) \
+  |  .  .  |  (0x24) \
+  | .    ..|  (0xc2) \
+  |..    . |  (0x43) \
+  |  .  .  |  (0x24) \
+  |   ..   |  (0x18) \
+  |.   .  .|  (0x91) outline
+
+PhysLayer SU8
+StreamIn 18, 0-255
+StreamOut 18 0
+RGB 255 255 255
+Filled \
+  |.      .|  (0x81) \
+  | .    . |  (0x42) \
+  |  .  .  |  (0x24) \
+  |   ..   |  (0x18) \
+  |   ..   |  (0x18) \
+  |  .  .  |  (0x24) \
+  | .    . |  (0x42) \
+  |.      .|  (0x81) outline
+
+PhysLayer DE
+StreamIn 7, 0-255
+StreamOut 7 0
+RGB 200 160 50
+Filled \
+  |.   .   |  (0x11) \
+  | .   .  |  (0x22) \
+  |  .   . |  (0x44) \
+  |   .   .|  (0x88) \
+  |.   .   |  (0x11) \
+  | .   .  |  (0x22) \
+  |  .   . |  (0x44) \
+  |   .   .|  (0x88) outline
+
+PhysLayer ICol
+StreamIn 17, 0
+StreamOut 17 0
+RGB 178 87 217
+Filled \
+  |.      .|  (0x81) \
+  | .    . |  (0x42) \
+  |  ....  |  (0x3c) \
+  |  .  .  |  (0x24) \
+  |  .  .  |  (0x24) \
+  |  ....  |  (0x3c) \
+  | .    . |  (0x42) \
+  |.      .|  (0x81) outline
+
+PhysLayer Col
+StreamIn 16, 0-255
+StreamOut 16 0
+RGB 162 179 151
+Filled \
+  |.  .   .|  (0x89) \
+  |   ..   |  (0x18) \
+  |  .  .  |  (0x24) \
+  | .    ..|  (0xc2) \
+  |..    . |  (0x43) \
+  |  .  .  |  (0x24) \
+  |   ..   |  (0x18) \
+  |.   .  .|  (0x91) outline
+
+PhysLayer Key
+StreamIn 20, 0-255
+StreamOut 20 0
+RGB 162 179 151
+Filled \
+  |        |  (0x0) \
+  |        |  (0x0) \
+  | .    . |  (0x42) \
+  |        |  (0x0) \
+  |  .  .  |  (0x24) \
+  |        |  (0x0) \
+  | .    . |  (0x42) \
+  |        |  (0x0) outline
+
+PhysLayer Plug
+StreamIn 1, 0-255
+StreamOut 1 0
+RGB 150 0 255
+Filled \
+  |.      .|  (0x81) \
+  | .    . |  (0x42) \
+  |  .  .  |  (0x24) \
+  |   ..   |  (0x18) \
+  |   ..   |  (0x18) \
+  |  .  .  |  (0x24) \
+  | .    . |  (0x42) \
+  |.      .|  (0x81) outline
+
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# Misc. Parameters and Attributes
+
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+SnapGridSpacing 5.0000
+EdgeSnapping all +off_grid -non_manh +edge_of_wires +path_of_wires
+
+# Fonts
+Font1P Lucida Console 10
+Font2P MS Sans Serif 10
+Font3P Lucida Console 12
+Font4P Lucida Console 10
+Drc y
+DrcNoPopup y
+FullWinCursor y
+MarkInstanceOrigin y
+MarkObjectCentroid y
+NoMergeObjects y
+BoxLinestyle 3640
+DocsDir c:/usr/local/xictools/xic/docs
+DrcInterMaxObjs 1000
+DrcInterMaxTime 5000
+DrcMaxErrors 0
+GridTrheshold 25
+ProgramRoot c:/usr/local/xictools/xic
+RoundFlashSides 20
+SubstrateEps 11.9
+# End of global attributes.
+
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# Print Driver Blocks
+
+DefaultDriver windows_native
+
+HardCopyDevice windows_native
+HardCopyCommand default
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 16.5
+HardCopyMaxHeight 16.5
+HardCopyMaxXoff 15
+HardCopyMaxYoff 15
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_line_draw
+HardCopyResol 72 75 100 150 200 300 400
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_line_draw_color
+HardCopyResol 72 75 100 150 200 300 400
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_bitmap
+HardCopyResol 72 75 100 150 200 300 400
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.9
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_bitmap_encoded
+HardCopyResol 72 75 100 150 200 300 400
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.9
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_bitmap_color
+HardCopyResol 72 75 100 150 200
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.9
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice postscript_bitmap_color_encoded
+HardCopyResol 72 75 100 150 200
+HardCopyDefResol 0
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.9
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice hpgl_line_draw_color
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice hp_laser_pcl
+HardCopyResol 75 100 150 300
+HardCopyDefResol 2
+HardCopyLegend 1
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 16.5
+HardCopyMaxHeight 16.5
+HardCopyMaxXoff 15
+HardCopyMaxYoff 15
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice xfig_line_draw_color
+HardCopyLegend 0
+HardCopyOrient 2
+HardCopyDefWidth 7.8
+HardCopyDefHeight 10.3
+HardCopyDefXoff 0.25
+HardCopyDefYoff 0.25
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 23.5
+HardCopyMaxHeight 23.5
+HardCopyMaxXoff 22
+HardCopyMaxYoff 22
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+HardCopyDevice image
+HardCopyResol 100 200
+HardCopyDefResol 0
+HardCopyLegend 0
+HardCopyOrient 2
+HardCopyDefWidth 4
+HardCopyDefHeight 4
+HardCopyDefXoff 0
+HardCopyDefYoff 0
+HardCopyMinWidth 1
+HardCopyMinHeight 1
+HardCopyMinXoff 0
+HardCopyMinYoff 0
+HardCopyMaxWidth 16.5
+HardCopyMaxHeight 16.5
+HardCopyMaxXoff 15
+HardCopyMaxYoff 15
+PhysGridStyle 0 5
+PhysExpand 2
+BackgroundColor 0 0 0
+
+#------------------------------------------------------------------------------
+# End of file
+

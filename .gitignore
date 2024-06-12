@@ -1,0 +1,9 @@
+# Git Ignore
+*.DS_Store
+*.bak
+*.dwl*
+*.log
+
+# AutoCAD Design Center Files
+*.cdc
+

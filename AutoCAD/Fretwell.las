@@ -1,0 +1,196 @@
+  0
+LAYERSTATEDICTIONARY
+  0
+LAYERSTATE
+  1
+Fretwell
+ 91
+2047
+301
+
+290
+1
+302
+L12D0 Etch
+  8
+Defpoints
+ 90
+0
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+L10D0 Abs
+ 90
+8
+ 62
+4
+370
+-3
+  6
+Continuous
+  2
+Color_4
+440
+0
+  8
+L12D0 Etch
+ 90
+8
+ 62
+190
+370
+-3
+  6
+Continuous
+  2
+Color_190
+440
+0
+  8
+L15D0 PVIA
+ 90
+8
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+L18D0 SU8
+ 90
+8
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+L9D0 Cont
+ 90
+8
+ 62
+30
+370
+-3
+  6
+Continuous
+  2
+Color_30
+440
+0
+  8
+L1D0 Plug
+ 90
+8
+ 62
+200
+370
+-3
+  6
+Continuous
+  2
+Color_200
+440
+0
+  8
+L4D0 Cntr
+ 90
+8
+ 62
+1
+370
+-3
+  6
+Continuous
+  2
+Color_1
+440
+0
+  8
+L7D0 DE
+ 90
+8
+ 62
+42
+370
+-3
+  6
+Continuous
+  2
+Color_42
+440
+0
+  8
+L8D0 Wire
+ 90
+8
+ 62
+5
+370
+-3
+  6
+Continuous
+  2
+Color_5
+440
+0
+  8
+L3D0 Base
+ 90
+8
+ 62
+3
+370
+-3
+  6
+Continuous
+  2
+Color_3
+440
+0
+  8
+L14D0 Au
+ 90
+8
+ 62
+2
+370
+-3
+  6
+Continuous
+  2
+Color_2
+440
+33554687
+  8
+0
+ 90
+8
+ 62
+6
+370
+-3
+  6
+Continuous
+  2
+Color_6
+440
+0

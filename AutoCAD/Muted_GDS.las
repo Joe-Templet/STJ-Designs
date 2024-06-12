@@ -1,0 +1,280 @@
+  0
+LAYERSTATEDICTIONARY
+  0
+LAYERSTATE
+  1
+Muted_GDS
+ 91
+2047
+301
+Layers named to maintain GDS compatibility
+290
+0
+302
+0
+  8
+Defpoints
+ 90
+0
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+AM_5
+ 90
+8
+ 62
+3
+370
+15
+  6
+Continuous
+  2
+Color_3
+440
+0
+  8
+L10D0_Abs
+ 90
+8
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+L50D0
+ 90
+8
+ 62
+52
+370
+-3
+  6
+Continuous
+  2
+Color_52
+440
+0
+  8
+L15D0
+ 90
+9
+ 62
+14
+370
+-3
+  6
+Continuous
+  2
+Color_14
+440
+0
+  8
+L20D0
+ 90
+9
+ 62
+13
+370
+-3
+  6
+Continuous
+  2
+Color_13
+440
+0
+  8
+L16D0
+ 90
+9
+ 62
+12
+370
+-3
+  6
+Continuous
+  2
+Color_12
+440
+0
+  8
+L17D0
+ 90
+9
+ 62
+11
+370
+-3
+  6
+Continuous
+  2
+Color_11
+440
+0
+  8
+L7D0
+ 90
+8
+ 62
+10
+370
+-3
+  6
+Continuous
+  2
+Color_10
+440
+0
+  8
+L18D0
+ 90
+9
+ 62
+9
+370
+-3
+  6
+Continuous
+  2
+Color_9
+440
+0
+  8
+L14D0
+ 90
+8
+ 62
+8
+370
+-3
+  6
+Continuous
+  2
+Color_8
+440
+0
+  8
+L10D0
+ 90
+9
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
+  8
+L9D0
+ 90
+8
+ 62
+6
+370
+-3
+  6
+Continuous
+  2
+Color_6
+440
+0
+  8
+L12D0
+ 90
+8
+ 62
+5
+370
+-3
+  6
+Continuous
+  2
+Color_5
+440
+0
+  8
+L4D0
+ 90
+8
+ 62
+4
+370
+-3
+  6
+Continuous
+  2
+Color_4
+440
+0
+  8
+L1D0
+ 90
+8
+ 62
+3
+370
+-3
+  6
+Continuous
+  2
+Color_3
+440
+0
+  8
+L3D0
+ 90
+8
+ 62
+2
+370
+-3
+  6
+Continuous
+  2
+Color_2
+440
+0
+  8
+L8D0
+ 90
+8
+ 62
+153
+370
+-3
+  6
+Continuous
+  2
+Color_153
+440
+0
+  8
+0
+ 90
+8
+ 62
+7
+370
+-3
+  6
+Continuous
+  2
+Color_7
+440
+0
